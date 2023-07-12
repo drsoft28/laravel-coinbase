@@ -3,7 +3,7 @@
 return [
     'apiKey' => env('COINBASE_API_KEY'),
     'apiVersion' => env('COINBASE_API_VERSION'),
-
+    'webhookUrl' => env('COINBASE_WEBHOOK_URL','coinbase/webhook'),
     'webhookSecret' => env('COINBASE_WEBHOOK_SECRET'),
     'webhookJobs' => [
         // 'charge:created' => \App\Jobs\CoinbaseWebhooks\HandleCreatedCharge::class,
